@@ -1,11 +1,12 @@
 const express = require('express');
-const app=express();    
+const router = express.Router();
 
 
-app.get('/',(req,res)=>{
+router.get('/',(req,res)=>{
     console.log(req.headers);
     res.send("Hello World");
-});
+})
 
 
-module.exports=app;
+
+module.exports=router;
